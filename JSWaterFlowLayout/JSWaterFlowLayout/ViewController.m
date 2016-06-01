@@ -70,23 +70,24 @@ static NSString* indentifier=@"cell";
 }
 
 -(void)setUpRefresh{
+    
     self.collectionView.mj_header=[MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNew)];
      [self.collectionView.mj_header beginRefreshing];
     
     self.collectionView.mj_footer=[MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
     self.collectionView.mj_footer.hidden=YES;
+    
 }
 
 -(void)loadNew{
     
-    
-    
-    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+         NSArray* arr=[JSGoodModel mj_objectArrayWithFilename:@"goods.plist"];
         
         [self.goods removeAllObjects];
         
-        [self.goods addObjectsFromArray:[JSGoodModel mj_objectArrayWithFilename:@"goods.plist"]];
+        [self.goods addObjectsFromArray:arr];
         
         [self.collectionView reloadData];
         
@@ -99,7 +100,10 @@ static NSString* indentifier=@"cell";
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [self.goods addObjectsFromArray:[JSGoodModel mj_objectArrayWithFilename:@"goods.plist"]];
+        
+        NSArray* arr=[JSGoodModel mj_objectArrayWithFilename:@"goods.plist"];
+        
+        [self.goods addObjectsFromArray:arr];
         
         [self.collectionView reloadData];
         
@@ -110,6 +114,8 @@ static NSString* indentifier=@"cell";
 #pragma mark--
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    
+    self.collectionView.mj_footer.hidden=self.goods.count==0;
     return self.goods.count;
 }
 

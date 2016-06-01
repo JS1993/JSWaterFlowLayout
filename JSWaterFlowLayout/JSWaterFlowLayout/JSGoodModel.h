@@ -15,6 +15,5 @@
 @property (nonatomic, copy) NSString *img;
 @property (nonatomic, copy) NSString *price;
 
-+(NSArray*)GoodModel;
 
 @end

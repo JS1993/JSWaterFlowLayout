@@ -48,6 +48,9 @@ static const UIEdgeInsets  defaultEdge={10,10,10,10};
     //做一次清空操作,清除以前计算出来的所有高度
     [self.attrsArr removeAllObjects];
     
+    //每次初始化，清空依次计算的所有高度
+    [self.colHeights removeAllObjects];
+    
     for (NSInteger i=0; i<colCount; i++) {
         [self.colHeights addObject:@(defaultEdge.top)];
     }
@@ -81,10 +84,10 @@ static const UIEdgeInsets  defaultEdge={10,10,10,10};
     //找出最短的那一行
     NSInteger minHeightCol = 0;
     //记录最短那一行的高度
-    CGFloat minColHeight=[self.colHeights[0] floatValue];
+    CGFloat minColHeight=[self.colHeights[0] doubleValue];
     for (NSInteger i=1; i<colCount; i++) {
         
-        CGFloat colHeight=[self.colHeights[i] floatValue];
+        CGFloat colHeight=[self.colHeights[i] doubleValue];
         
         if (colHeight<minColHeight) {
             
@@ -112,9 +115,9 @@ static const UIEdgeInsets  defaultEdge={10,10,10,10};
 -(CGSize)collectionViewContentSize{
     
     //记录最高那一行的高度
-    CGFloat maxColHeight=[self.colHeights[0] floatValue];
+    CGFloat maxColHeight=[self.colHeights[0] doubleValue];
     for (NSInteger i=1; i<colCount; i++) {
-        CGFloat colHeight=[self.colHeights[i] floatValue];
+        CGFloat colHeight=[self.colHeights[i] doubleValue];
         if (colHeight>maxColHeight) {
             maxColHeight=colHeight;;
         }

@@ -16,9 +16,12 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-8l-TLO">
                         <rect key="frame" x="0.0" y="0.0" width="120" height="167"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7O-96-ZWg">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7O-96-ZWg">
                         <rect key="frame" x="0.0" y="138" width="120" height="29"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33528846153846154" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="3jz-bE-wiS"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -29,8 +32,11 @@
             <constraints>
                 <constraint firstItem="GHF-8l-TLO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HyM-aF-Yod"/>
                 <constraint firstItem="GHF-8l-TLO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Rp2-3N-qJu"/>
+                <constraint firstAttribute="bottom" secondItem="s7O-96-ZWg" secondAttribute="bottom" id="V08-2s-oHV"/>
                 <constraint firstAttribute="trailing" secondItem="GHF-8l-TLO" secondAttribute="trailing" id="cXc-fA-nma"/>
+                <constraint firstItem="s7O-96-ZWg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gaY-ig-mhf"/>
                 <constraint firstAttribute="bottom" secondItem="GHF-8l-TLO" secondAttribute="bottom" id="r12-dl-Jgb"/>
+                <constraint firstAttribute="trailing" secondItem="s7O-96-ZWg" secondAttribute="trailing" id="zfg-cL-U8U"/>
             </constraints>
             <size key="customSize" width="120" height="167"/>
             <connections>
