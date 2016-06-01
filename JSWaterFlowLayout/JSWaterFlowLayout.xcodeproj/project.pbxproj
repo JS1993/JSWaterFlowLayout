@@ -15,6 +15,7 @@
 		CF22792D1CFEE78A00D252D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF22792B1CFEE78A00D252D7 /* LaunchScreen.storyboard */; };
 		CF2279381CFEE78A00D252D7 /* JSWaterFlowLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279371CFEE78A00D252D7 /* JSWaterFlowLayoutTests.m */; };
 		CF2279431CFEE78A00D252D7 /* JSWaterFlowLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279421CFEE78A00D252D7 /* JSWaterFlowLayoutUITests.m */; };
+		CF2279521CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279511CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CF22793E1CFEE78A00D252D7 /* JSWaterFlowLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSWaterFlowLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2279421CFEE78A00D252D7 /* JSWaterFlowLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSWaterFlowLayoutUITests.m; sourceTree = "<group>"; };
 		CF2279441CFEE78A00D252D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2279501CFEE89D00D252D7 /* JSWaterCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWaterCollectionViewLayout.h; sourceTree = "<group>"; };
+		CF2279511CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWaterCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				CF2279211CFEE78A00D252D7 /* AppDelegate.m */,
 				CF2279231CFEE78A00D252D7 /* ViewController.h */,
 				CF2279241CFEE78A00D252D7 /* ViewController.m */,
+				CF2279501CFEE89D00D252D7 /* JSWaterCollectionViewLayout.h */,
+				CF2279511CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m */,
 				CF2279261CFEE78A00D252D7 /* Main.storyboard */,
 				CF2279291CFEE78A00D252D7 /* Assets.xcassets */,
 				CF22792B1CFEE78A00D252D7 /* LaunchScreen.storyboard */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2279251CFEE78A00D252D7 /* ViewController.m in Sources */,
+				CF2279521CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m in Sources */,
 				CF2279221CFEE78A00D252D7 /* AppDelegate.m in Sources */,
 				CF22791F1CFEE78A00D252D7 /* main.m in Sources */,
 			);
