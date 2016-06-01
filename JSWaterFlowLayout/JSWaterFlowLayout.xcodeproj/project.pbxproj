@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD6542EA83D707C926161567 /* libPods-JSWaterFlowLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2640FA8E3631E1B37AA4142 /* libPods-JSWaterFlowLayout.a */; };
 		CF22791F1CFEE78A00D252D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF22791E1CFEE78A00D252D7 /* main.m */; };
 		CF2279221CFEE78A00D252D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279211CFEE78A00D252D7 /* AppDelegate.m */; };
 		CF2279251CFEE78A00D252D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279241CFEE78A00D252D7 /* ViewController.m */; };
@@ -16,6 +17,10 @@
 		CF2279381CFEE78A00D252D7 /* JSWaterFlowLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279371CFEE78A00D252D7 /* JSWaterFlowLayoutTests.m */; };
 		CF2279431CFEE78A00D252D7 /* JSWaterFlowLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279421CFEE78A00D252D7 /* JSWaterFlowLayoutUITests.m */; };
 		CF2279521CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279511CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m */; };
+		CF2279541CFEF4F300D252D7 /* goods.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF2279531CFEF4F300D252D7 /* goods.plist */; };
+		CF2279581CFEF69F00D252D7 /* JSGoodCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2279561CFEF69F00D252D7 /* JSGoodCollectionViewCell.m */; };
+		CF2279591CFEF69F00D252D7 /* JSGoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2279571CFEF69F00D252D7 /* JSGoodCollectionViewCell.xib */; };
+		CF22795C1CFEF75600D252D7 /* JSGoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF22795B1CFEF75600D252D7 /* JSGoodModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FF4D022FDCB520C753A1386 /* Pods-JSWaterFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWaterFlowLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSWaterFlowLayout/Pods-JSWaterFlowLayout.release.xcconfig"; sourceTree = "<group>"; };
+		82084B218D0A23B959F1AD52 /* Pods-JSWaterFlowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSWaterFlowLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSWaterFlowLayout/Pods-JSWaterFlowLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		CF22791A1CFEE78A00D252D7 /* JSWaterFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSWaterFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF22791E1CFEE78A00D252D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF2279201CFEE78A00D252D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +61,13 @@
 		CF2279441CFEE78A00D252D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF2279501CFEE89D00D252D7 /* JSWaterCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWaterCollectionViewLayout.h; sourceTree = "<group>"; };
 		CF2279511CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWaterCollectionViewLayout.m; sourceTree = "<group>"; };
+		CF2279531CFEF4F300D252D7 /* goods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = goods.plist; sourceTree = "<group>"; };
+		CF2279551CFEF69F00D252D7 /* JSGoodCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSGoodCollectionViewCell.h; sourceTree = "<group>"; };
+		CF2279561CFEF69F00D252D7 /* JSGoodCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGoodCollectionViewCell.m; sourceTree = "<group>"; };
+		CF2279571CFEF69F00D252D7 /* JSGoodCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSGoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		CF22795A1CFEF75600D252D7 /* JSGoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSGoodModel.h; sourceTree = "<group>"; };
+		CF22795B1CFEF75600D252D7 /* JSGoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGoodModel.m; sourceTree = "<group>"; };
+		D2640FA8E3631E1B37AA4142 /* libPods-JSWaterFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSWaterFlowLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6542EA83D707C926161567 /* libPods-JSWaterFlowLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCABAA094753908CD62AD0D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82084B218D0A23B959F1AD52 /* Pods-JSWaterFlowLayout.debug.xcconfig */,
+				7FF4D022FDCB520C753A1386 /* Pods-JSWaterFlowLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF2279111CFEE78A00D252D7 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +112,8 @@
 				CF2279361CFEE78A00D252D7 /* JSWaterFlowLayoutTests */,
 				CF2279411CFEE78A00D252D7 /* JSWaterFlowLayoutUITests */,
 				CF22791B1CFEE78A00D252D7 /* Products */,
+				CCABAA094753908CD62AD0D5 /* Pods */,
+				DC2B9D63A7C00FDE626D5BA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,10 +136,16 @@
 				CF2279241CFEE78A00D252D7 /* ViewController.m */,
 				CF2279501CFEE89D00D252D7 /* JSWaterCollectionViewLayout.h */,
 				CF2279511CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m */,
+				CF2279551CFEF69F00D252D7 /* JSGoodCollectionViewCell.h */,
+				CF2279561CFEF69F00D252D7 /* JSGoodCollectionViewCell.m */,
+				CF2279571CFEF69F00D252D7 /* JSGoodCollectionViewCell.xib */,
+				CF22795A1CFEF75600D252D7 /* JSGoodModel.h */,
+				CF22795B1CFEF75600D252D7 /* JSGoodModel.m */,
 				CF2279261CFEE78A00D252D7 /* Main.storyboard */,
 				CF2279291CFEE78A00D252D7 /* Assets.xcassets */,
 				CF22792B1CFEE78A00D252D7 /* LaunchScreen.storyboard */,
 				CF22792E1CFEE78A00D252D7 /* Info.plist */,
+				CF2279531CFEF4F300D252D7 /* goods.plist */,
 				CF22791D1CFEE78A00D252D7 /* Supporting Files */,
 			);
 			path = JSWaterFlowLayout;
@@ -145,6 +177,14 @@
 			path = JSWaterFlowLayoutUITests;
 			sourceTree = "<group>";
 		};
+		DC2B9D63A7C00FDE626D5BA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2640FA8E3631E1B37AA4142 /* libPods-JSWaterFlowLayout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF2279471CFEE78A00D252D7 /* Build configuration list for PBXNativeTarget "JSWaterFlowLayout" */;
 			buildPhases = (
+				9ABBF4FC090C793A5C6E8191 /* 📦 Check Pods Manifest.lock */,
 				CF2279161CFEE78A00D252D7 /* Sources */,
 				CF2279171CFEE78A00D252D7 /* Frameworks */,
 				CF2279181CFEE78A00D252D7 /* Resources */,
+				580CC573C20D71F17F0F9298 /* 📦 Embed Pods Frameworks */,
+				623DFD54AC88B6E896461283 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,8 +294,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2279591CFEF69F00D252D7 /* JSGoodCollectionViewCell.xib in Resources */,
 				CF22792D1CFEE78A00D252D7 /* LaunchScreen.storyboard in Resources */,
 				CF22792A1CFEE78A00D252D7 /* Assets.xcassets in Resources */,
+				CF2279541CFEF4F300D252D7 /* goods.plist in Resources */,
 				CF2279281CFEE78A00D252D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +318,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		580CC573C20D71F17F0F9298 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSWaterFlowLayout/Pods-JSWaterFlowLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623DFD54AC88B6E896461283 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSWaterFlowLayout/Pods-JSWaterFlowLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ABBF4FC090C793A5C6E8191 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF2279161CFEE78A00D252D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,6 +375,8 @@
 				CF2279521CFEE89D00D252D7 /* JSWaterCollectionViewLayout.m in Sources */,
 				CF2279221CFEE78A00D252D7 /* AppDelegate.m in Sources */,
 				CF22791F1CFEE78A00D252D7 /* main.m in Sources */,
+				CF2279581CFEF69F00D252D7 /* JSGoodCollectionViewCell.m in Sources */,
+				CF22795C1CFEF75600D252D7 /* JSGoodModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +515,7 @@
 		};
 		CF2279481CFEE78A00D252D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82084B218D0A23B959F1AD52 /* Pods-JSWaterFlowLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSWaterFlowLayout/Info.plist;
@@ -431,6 +527,7 @@
 		};
 		CF2279491CFEE78A00D252D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF4D022FDCB520C753A1386 /* Pods-JSWaterFlowLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSWaterFlowLayout/Info.plist;
@@ -505,6 +602,7 @@
 				CF2279491CFEE78A00D252D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF22794A1CFEE78A00D252D7 /* Build configuration list for PBXNativeTarget "JSWaterFlowLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +611,7 @@
 				CF22794C1CFEE78A00D252D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF22794D1CFEE78A00D252D7 /* Build configuration list for PBXNativeTarget "JSWaterFlowLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +620,7 @@
 				CF22794F1CFEE78A00D252D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

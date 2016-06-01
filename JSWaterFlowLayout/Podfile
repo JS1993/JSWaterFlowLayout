@@ -1,0 +1,11 @@
+platform :ios, "8.0"
+
+target "JSWaterFlowLayout" do
+
+pod "SDWebImage"
+
+pod "MJRefresh"
+
+pod "MJExtension"
+
+end

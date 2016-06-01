@@ -76,7 +76,7 @@ static const UIEdgeInsets  defaultEdge={10,10,10,10};
     UICollectionViewLayoutAttributes* attrs=[UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
     CGFloat width=(self.collectionView.bounds.size.width-defaultMargin*(colCount+1))/colCount;
-    CGFloat height=50+arc4random_uniform(30);
+    CGFloat height=50+arc4random_uniform(100);
     
     //找出最短的那一行
     NSInteger minHeightCol = 0;
