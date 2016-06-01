@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSGoodModel.h"
 
 @interface JSWaterCollectionViewLayout : UICollectionViewLayout
+
+@property(nonatomic,strong)NSMutableArray* goods;
 
 @end

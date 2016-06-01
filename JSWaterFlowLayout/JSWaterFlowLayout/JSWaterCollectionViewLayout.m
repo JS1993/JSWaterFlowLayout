@@ -17,6 +17,8 @@ static const UIEdgeInsets  defaultEdge={10,10,10,10};
 @property(strong,nonatomic)NSMutableArray* colHeights;
 
 @property(strong,nonatomic)NSMutableArray* attrsArr;
+
+
 @end
 
 @implementation JSWaterCollectionViewLayout
@@ -79,7 +81,11 @@ static const UIEdgeInsets  defaultEdge={10,10,10,10};
     UICollectionViewLayoutAttributes* attrs=[UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
     CGFloat width=(self.collectionView.bounds.size.width-defaultMargin*(colCount+1))/colCount;
-    CGFloat height=50+arc4random_uniform(100);
+    
+    JSGoodModel* good=self.goods[indexPath.item];
+    
+    
+    CGFloat height=good.h/good.w*width;
     
     //找出最短的那一行
     NSInteger minHeightCol = 0;

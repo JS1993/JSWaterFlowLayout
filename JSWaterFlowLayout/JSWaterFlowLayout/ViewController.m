@@ -10,6 +10,7 @@
 #import "JSWaterCollectionViewLayout.h"
 #import "JSGoodModel.h"
 #import "JSGoodCollectionViewCell.h"
+
 #import <MJRefresh.h>
 #import <MJExtension.h>
 
@@ -20,6 +21,7 @@
 /*商品数组*/
 @property(strong,nonatomic)NSMutableArray* goods;
 
+@property(strong,nonatomic)JSWaterCollectionViewLayout*  waterFlowLayout;
 
 @end
 
@@ -41,9 +43,9 @@
 {
     if (_collectionView==nil) {
         
-        JSWaterCollectionViewLayout* waterFlowLayout=[[JSWaterCollectionViewLayout alloc]init];
+        self.waterFlowLayout=[[JSWaterCollectionViewLayout alloc]init];
         
-        _collectionView=[[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:waterFlowLayout];
+        _collectionView=[[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:self.waterFlowLayout];
 //        _collectionView.delegate=self;
         _collectionView.backgroundColor=[UIColor whiteColor];
         _collectionView.dataSource=self;
@@ -89,6 +91,8 @@ static NSString* indentifier=@"cell";
         
         [self.goods addObjectsFromArray:arr];
         
+        self.waterFlowLayout.goods=self.goods;
+        
         [self.collectionView reloadData];
         
         [self.collectionView.mj_header endRefreshing];
@@ -104,6 +108,8 @@ static NSString* indentifier=@"cell";
         NSArray* arr=[JSGoodModel mj_objectArrayWithFilename:@"goods.plist"];
         
         [self.goods addObjectsFromArray:arr];
+        
+        self.waterFlowLayout.goods=self.goods;
         
         [self.collectionView reloadData];
         
